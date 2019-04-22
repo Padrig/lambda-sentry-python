@@ -8,9 +8,13 @@ Demonstrate how to get Sentry to work with AWS Lambda
 - sentry_sdk should be initialized *outside* the handler
 
 ```bash
-virtualenv venv
-source venv/bin/activate
 npm install -g serverless
+```
+```bash
+python -m venv venv
+source venv/bin/activate #mac, linux
+venv/Scripts/activate #windows
+npm install
 
 sls deploy
 
